@@ -49,6 +49,7 @@
 
     <properties>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+        <maven.test.skip>true</maven.test.skip>
     </properties>
 
     <dependencies>
@@ -103,7 +104,19 @@
 
     <profiles>
         <profile>
+            <id>java8tests</id>
+            <activation>
+                <jdk>1.8</jdk>
+            </activation>
+            <properties>
+                <maven.test.skip>false</maven.test.skip>
+            </properties>
+        </profile>
+        <profile>
             <id>localjdk</id>
+            <properties>
+                <maven.test.skip>false</maven.test.skip>
+            </properties>
             <build>
                 <plugins>
                     <plugin>
