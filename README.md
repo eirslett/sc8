@@ -4,11 +4,23 @@ Using Scala libraries from Java 8 can be difficult, because Scala's functions ar
 recognised as a FunctionalInterface by the Java compiler. Sc8 is a simple conversion library that
 converts Java lambdas to Scala functions.
 
-In your Java file, import F (and/or C):
-
-`import static com.github.eirslett.sc8.Sc8.F;`
+## Install via Maven
+```
+<dependency>
+  <groupId>com.github.eirslett</groupId>
+  <artifactId>sc8</artifactId>
+  <version>0.1.0</version>
+</dependency>
+```
 
 ## Using the library
+
+In your Java file, import F (and/or C if required):
+
+```
+import static com.github.eirslett.sc8.Sc8.C;
+import static com.github.eirslett.sc8.Sc8.F;
+```
 
  What you have to do, is to wrap your lambda with F(...), for example:
 
