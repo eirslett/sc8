@@ -4,9 +4,48 @@
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <modelVersion>4.0.0</modelVersion>
 
+    <parent>
+        <groupId>org.sonatype.oss</groupId>
+        <artifactId>oss-parent</artifactId>
+        <version>7</version>
+    </parent>
+
     <groupId>com.github.eirslett</groupId>
     <artifactId>sc8</artifactId>
     <version>0.1.0-SNAPSHOT</version>
+    <packaging>jar</packaging>
+
+    <name>Sc8 - Scala Functions For Java 8</name>
+
+    <description>
+        Using Scala libraries from Java 8 can be difficult, because Scala's functions
+        are traits, and not recognised as a FunctionalInterface by the Java compiler.
+        Sc8 is a simple conversion library that converts Java lambdas to Scala functions.
+    </description>
+
+    <url>https://github.com/eirslett/sc8</url>
+
+    <licenses>
+        <license>
+            <name>The Apache Software License, Version 2.0</name>
+            <url>http://www.apache.org/licenses/LICENSE-2.0.txt</url>
+            <distribution>repo</distribution>
+        </license>
+    </licenses>
+
+    <scm>
+        <url>https://github.com/eirslett/sc8</url>
+        <connection>scm:git:https://github.com/eirslett/sc8.git</connection>
+        <developerConnection>scm:git:git@github.com:eirslett/sc8.git</developerConnection>
+    </scm>
+
+    <developers>
+        <developer>
+            <id>eirslett</id>
+            <name>Eirik Sletteberg</name>
+            <email>eiriksletteberg@gmail.com</email>
+        </developer>
+    </developers>
 
     <properties>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
