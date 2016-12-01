@@ -1,3 +1,7 @@
+# THIS PROJECT IS OUTDATED
+
+3 years after writing it, Scala 2.12 has finally been released, with built-in full interop between Java 8 and Scala! :smile:
+
 # Sc8 - Scala functions in Java 8
 
 Using Scala libraries from Java 8 can be difficult, because Scala's functions are traits, and not
