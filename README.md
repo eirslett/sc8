@@ -1,6 +1,6 @@
 # THIS PROJECT IS OUTDATED
 
-3 years after writing it, Scala 2.12 has finally been released, with built-in full interop between Java 8 and Scala! :smile:
+3 years after making this project, Scala 2.12 has finally been released, with built-in full interop between Java 8 and Scala! :smile:
 
 # Sc8 - Scala functions in Java 8
 
